@@ -1,8 +1,22 @@
-<nav class="sm:px-8 sm:py-4 flex justify-between text-gray-800 shadow-md">
-	<span class="flex font-bold text-2xl">Duranz</span>
-	<ul class="flex space-x-8 justify-end">
-		<li class="cursor-pointer">Home</li>
-		<li class="cursor-pointer">Cricket</li>
-		<li class="cursor-pointer">Programming</li>
-	</ul>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#/">Duranz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#/">Cricket</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/">Programming</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 </nav>

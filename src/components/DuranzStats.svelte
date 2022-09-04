@@ -1,10 +1,10 @@
-<div class="px-8 py-4">
-	<ul class="flex justify-between">
-		<li>Player-Stats</li>
-		<li>Team-Stats</li>
-		<li>Batsman vs Bowler</li>
-		<li>Player vs Team</li>
-		<li>Team vs Team</li>
-		<li>Comparison</li>
-	</ul>
+<div class="container">
+	<div class="d-flex justify-content-between py-4">
+		<div>Player-Stats</div>
+		<div>Team-Stats</div>
+		<div>Batsman vs Bowler</div>
+		<div>Player vs Team</div>
+		<div>Team vs Team</div>
+		<div>Comparison</div>
+	</div>
 </div>
