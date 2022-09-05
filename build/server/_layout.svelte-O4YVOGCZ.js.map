@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../.svelte-kit/adapter-node/entries/pages/_layout.svelte.js"],
-  "sourcesContent": ["import { c as create_ssr_component } from \"../../chunks/index.js\";\nconst Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {\n  return `\n<link href=\"${\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\"}\" rel=\"${\"stylesheet\"}\" integrity=\"${\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\"}\" crossorigin=\"${\"anonymous\"}\">\n\n\n${slots.default ? slots.default({}) : ``}`;\n});\nexport {\n  Layout as default\n};\n"],
-  "mappings": ";;;;;;AACA,IAAM,SAAS,qBAAqB,CAAC,UAAU,SAAS,YAAY,UAAU;AAC5E,SAAO;AAAA,cACK,mFAAmF,4BAA4B,2FAA2F;AAAA;AAAA;AAAA,EAGtN,MAAM,UAAU,MAAM,QAAQ,CAAC,CAAC,IAAI;AACtC,CAAC;",
-  "names": []
-}
