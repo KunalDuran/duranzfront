@@ -35,7 +35,7 @@ export default function OutlinedCard(props) {
                 setimageUrl(`https://cdn.kunalduran.com/static/${teamName}.png`)
             }
         }).catch(err=> {
-            setimageUrl(`https://cdn.kunalduran.com/${teamName}.png`)
+            setimageUrl(`https://cdn.kunalduran.com/static/${teamName}.png`)
             console.log(err)
         })
     }, [teamName])
