@@ -5,6 +5,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Head from 'next/head'
 
 const theme = createTheme({
+    palette: {
+    background: {
+      default: "transparent"
+    }
+  },
   typography: {
     fontFamily: [
       '-apple-system',
