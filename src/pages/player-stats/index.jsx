@@ -107,10 +107,10 @@ export default function OutlinedCard(props) {
                         </Grid>
                         <Grid item xs={12} sm={6} >
                             <FormControl fullWidth>
-                                <InputLabel id="demo-multiple-chip-label">Format</InputLabel>
+                                <InputLabel id="demo-multiple-chip-label2">Format</InputLabel>
                                 <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
+                                    labelId="demo-simple-select-label2"
+                                    id="demo-simple-select2"
                                     value={format}
                                     label="Format"
                                     onChange={(e) => setformat(e.target.value)}
