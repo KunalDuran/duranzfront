@@ -27,15 +27,17 @@ export default function OutlinedCard(props) {
         if (teamName == "" || !teamName) {
             return
         }
-        let url = `https://cdn.kunalduran.com/${teamName}.svg`
-        console.log(url)
-        fetch(url, { mode: 'no-cors'}).then(d => {
+        let url = `https://cdn.kunalduran.com/static/${teamName}.svg`
+        fetch(url).then(d => {
             if (d.status != 404 && d.status != 0) {
-                setimageUrl(`https://cdn.kunalduran.com/${teamName}.svg`)
+                setimageUrl(`https://cdn.kunalduran.com/static/${teamName}.svg`)
             } else {
-                setimageUrl(`https://cdn.kunalduran.com/${teamName}.png`)
+                setimageUrl(`https://cdn.kunalduran.com/static/${teamName}.png`)
             }
-        }).catch(err=> console.log(err))
+        }).catch(err=> {
+            setimageUrl(`https://cdn.kunalduran.com/${teamName}.png`)
+            console.log(err)
+        })
     }, [teamName])
 
 
