@@ -31,7 +31,7 @@ export default function OutlinedCard(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        let url = `http://api.kunalduran.com/player-stats/${playerName}?format=${format}&season=${season}`
+        let url = `https://api.kunalduran.com/player-stats/${playerName}?format=${format}&season=${season}`
 
         fetch(url)
             .then(r => r.json())

@@ -23,7 +23,7 @@ export default function OutlinedCard(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        let url = `http://api.kunalduran.com/player-stats/${playerName}?format=${format}&season=${season}&vsteam=${teamName}`
+        let url = `https://api.kunalduran.com/player-stats/${playerName}?format=${format}&season=${season}&vsteam=${teamName}`
         console.log(url)
         fetch(url)
             .then(r => r.json())
@@ -121,10 +121,10 @@ export default function OutlinedCard(props) {
 
 export async function getServerSideProps() {
     // Fetch data from external API
-    const res = await fetch(`http://api.kunalduran.com/team-list/`)
+    const res = await fetch(`https://api.kunalduran.com/team-list/`)
     const teamList = await res.json()
 
-    const res2 = await fetch(`http://api.kunalduran.com/player-list/`)
+    const res2 = await fetch(`https://api.kunalduran.com/player-list/`)
     const playerList = await res2.json()
 
     // Pass data to the page via props

@@ -27,13 +27,13 @@ export default function OutlinedCard(props) {
         if (teamName == "" || !teamName) {
             return
         }
-        let url = `http://cdn.kunalduran.com/${teamName}.svg`
+        let url = `https://cdn.kunalduran.com/${teamName}.svg`
         console.log(url)
         fetch(url, { mode: 'no-cors'}).then(d => {
             if (d.status != 404 && d.status != 0) {
-                setimageUrl(`http://cdn.kunalduran.com/${teamName}.svg`)
+                setimageUrl(`https://cdn.kunalduran.com/${teamName}.svg`)
             } else {
-                setimageUrl(`http://cdn.kunalduran.com/${teamName}.png`)
+                setimageUrl(`https://cdn.kunalduran.com/${teamName}.png`)
             }
         }).catch(err=> console.log(err))
     }, [teamName])
@@ -47,7 +47,7 @@ export default function OutlinedCard(props) {
         console.log(
             'form submit'
         )
-        let url = `http://api.kunalduran.com/team-stats/${teamName}?format=${format}&season=${season}`
+        let url = `https://api.kunalduran.com/team-stats/${teamName}`
         console.log(url)
         fetch(url)
             .then(r => r.json())
@@ -149,7 +149,7 @@ export default function OutlinedCard(props) {
 
 
 export async function getServerSideProps() {
-    const res = await fetch(`http://api.kunalduran.com/team-list/`)
+    const res = await fetch(`https://api.kunalduran.com/team-list/`)
     const teamList = await res.json()
     return { props: { teamList } }
 }

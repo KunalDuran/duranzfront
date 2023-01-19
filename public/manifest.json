@@ -1,11 +1,11 @@
 {
-    "theme_color": "#f69435",
-    "background_color": "#f69435",
+    "theme_color": "#808080",
+    "background_color": "#808080",
     "display": "standalone",
     "scope": "/",
     "start_url": "/team-stats",
     "name": "Duranz Stats",
-    "short_name": "duranz",
+    "short_name": "Duranz",
     "description": "application to view cricket statistics of international cricket and other cricket leagues",
     "icons": [
         {
